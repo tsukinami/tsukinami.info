@@ -309,8 +309,6 @@ ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
 ul.legals li:last-child::after { content: ""; }
 .legals { text-align: left; }
-.credit { height: 100px; }
-.credit p { position: absolute; bottom: 0; right: 15px; }
 /* ==========================================================================
 FlexSlider Custom CSS
 ========================================================================== */
@@ -335,4 +333,10 @@ Mobile
     .hero { padding: 16px 0 128px 0; }
     .hero h1 { font-size: 30px; letter-spacing: 9px; margin: 8px; }
     .inner { padding-top: 64px; }
+    .ad { padding: 0; }
+    .credit p { text-align: center; }
+}
+@media only screen and (min-width: 768px) {
+    .credit p { position: absolute; bottom: 0; right: 15px; }
+    .credit { height: 100px; }
 }
